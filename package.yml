@@ -1,6 +1,6 @@
 name       : python-pyside
 version    : 1.2.4
-release    : 1
+release    : 2
 source     :
     - https://pypi.python.org/packages/36/ac/ca31db6f2225844d37a41b10615c3d371587677efd074db29855e7035de6/PySide-1.2.4.tar.gz : 1421bc1bf612c396070de9e1ffe227c07c1f3129278bc7d30c754b5146be2433
 license    : LGPL-2.1
@@ -11,11 +11,19 @@ description: |
 builddeps  :
     - pkgconfig(gl)
     - pkgconfig(QtCore)
+    - pkgconfig(shiboken)
     - pyicu
 setup      : |
     ln -s qmake-qt4 /usr/bin/qmake
     ln -s rcc-qt4 /usr/bin/rcc
 build      : |
-    %python_setup
+    python setup.py egg_info
+    cd sources/pyside
+    %cmake \
+        -DBUILD_TESTS=OFF \
+        -DQT_QMAKE_EXECUTABLE=/usr/bin/qmake-qt4 \
+        -DQT_RCC_EXECUTABLE=/usr/bin/rcc-qt4 .
+    %make
 install    : |
-    %python_install
+    cd sources/pyside
+    %make_install
