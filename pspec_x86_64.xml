@@ -2,8 +2,8 @@
     <Source>
         <Name>python-pyside</Name>
         <Packager>
-            <Name>Joshua Strobl</Name>
-            <Email>joshua@stroblindustries.com</Email>
+            <Name>Bryan T. Meyers</Name>
+            <Email>bmeyers@datadrake.com</Email>
         </Packager>
         <License>LGPL-2.1</License>
         <PartOf>programming.python</PartOf>
@@ -19,7 +19,8 @@
 </Description>
         <PartOf>programming.python</PartOf>
         <Files>
-            <Path fileType="library">/usr/lib/lib*.so.*</Path>
+            <Path fileType="library">/usr/lib/libpyside-python2.7.so.1.2</Path>
+            <Path fileType="library">/usr/lib/libpyside-python2.7.so.1.2.4</Path>
             <Path fileType="library">/usr/lib/python2.7/site-packages/PySide/QtCore.so</Path>
             <Path fileType="library">/usr/lib/python2.7/site-packages/PySide/QtDeclarative.so</Path>
             <Path fileType="library">/usr/lib/python2.7/site-packages/PySide/QtGui.so</Path>
@@ -79,22 +80,53 @@
 </Description>
         <PartOf>programming.devel</PartOf>
         <RuntimeDependencies>
-            <Dependency release="3">python-pyside</Dependency>
+            <Dependency release="4">python-pyside</Dependency>
         </RuntimeDependencies>
         <Files>
-            <Path fileType="header">/usr/include/</Path>
-            <Path fileType="library">/usr/lib/cmake/</Path>
-            <Path fileType="library">/usr/lib/lib*.so</Path>
-            <Path fileType="data">/usr/lib/pkgconfig/*.pc</Path>
+            <Path fileType="header">/usr/include/PySide/QtCore/pyside_qtcore_python.h</Path>
+            <Path fileType="header">/usr/include/PySide/QtDeclarative/pyside_qtdeclarative_python.h</Path>
+            <Path fileType="header">/usr/include/PySide/QtGui/pyside_qtgui_python.h</Path>
+            <Path fileType="header">/usr/include/PySide/QtGui/qpytextobject.h</Path>
+            <Path fileType="header">/usr/include/PySide/QtHelp/pyside_qthelp_python.h</Path>
+            <Path fileType="header">/usr/include/PySide/QtMultimedia/pyside_qtmultimedia_python.h</Path>
+            <Path fileType="header">/usr/include/PySide/QtNetwork/pyside_qtnetwork_python.h</Path>
+            <Path fileType="header">/usr/include/PySide/QtOpenGL/pyside_qtopengl_python.h</Path>
+            <Path fileType="header">/usr/include/PySide/QtScript/pyside_qtscript_python.h</Path>
+            <Path fileType="header">/usr/include/PySide/QtScriptTools/pyside_qtscripttools_python.h</Path>
+            <Path fileType="header">/usr/include/PySide/QtSql/pyside_qtsql_python.h</Path>
+            <Path fileType="header">/usr/include/PySide/QtSvg/pyside_qtsvg_python.h</Path>
+            <Path fileType="header">/usr/include/PySide/QtTest/pyside_qttest_python.h</Path>
+            <Path fileType="header">/usr/include/PySide/QtUiTools/pyside_qtuitools_python.h</Path>
+            <Path fileType="header">/usr/include/PySide/QtXml/pyside_qtxml_python.h</Path>
+            <Path fileType="header">/usr/include/PySide/QtXmlPatterns/pyside_qtxmlpatterns_python.h</Path>
+            <Path fileType="header">/usr/include/PySide/destroylistener.h</Path>
+            <Path fileType="header">/usr/include/PySide/dynamicqmetaobject.h</Path>
+            <Path fileType="header">/usr/include/PySide/globalreceiver.h</Path>
+            <Path fileType="header">/usr/include/PySide/pyside.h</Path>
+            <Path fileType="header">/usr/include/PySide/pyside_global.h</Path>
+            <Path fileType="header">/usr/include/PySide/pysideclassinfo.h</Path>
+            <Path fileType="header">/usr/include/PySide/pysideconversions.h</Path>
+            <Path fileType="header">/usr/include/PySide/pysidemacros.h</Path>
+            <Path fileType="header">/usr/include/PySide/pysidemetafunction.h</Path>
+            <Path fileType="header">/usr/include/PySide/pysideproperty.h</Path>
+            <Path fileType="header">/usr/include/PySide/pysideqflags.h</Path>
+            <Path fileType="header">/usr/include/PySide/pysidesignal.h</Path>
+            <Path fileType="header">/usr/include/PySide/pysideweakref.h</Path>
+            <Path fileType="header">/usr/include/PySide/signalmanager.h</Path>
+            <Path fileType="library">/usr/lib/cmake/PySide-1.2.4/PySideConfig-python2.7.cmake</Path>
+            <Path fileType="library">/usr/lib/cmake/PySide-1.2.4/PySideConfig.cmake</Path>
+            <Path fileType="library">/usr/lib/cmake/PySide-1.2.4/PySideConfigVersion.cmake</Path>
+            <Path fileType="library">/usr/lib/libpyside-python2.7.so</Path>
+            <Path fileType="data">/usr/lib/pkgconfig/pyside.pc</Path>
         </Files>
     </Package>
     <History>
-        <Update release="3">
-            <Date>2016-10-21</Date>
+        <Update release="4">
+            <Date>2018-12-13</Date>
             <Version>1.2.4</Version>
             <Comment>Packaging update</Comment>
-            <Name>Joshua Strobl</Name>
-            <Email>joshua@stroblindustries.com</Email>
+            <Name>Bryan T. Meyers</Name>
+            <Email>bmeyers@datadrake.com</Email>
         </Update>
     </History>
 </PISI>
