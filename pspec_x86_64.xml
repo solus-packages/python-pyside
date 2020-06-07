@@ -5,12 +5,12 @@
             <Name>Bryan T. Meyers</Name>
             <Email>bmeyers@datadrake.com</Email>
         </Packager>
-        <License>LGPL-2.1</License>
+        <License>LGPL-2.1-or-later</License>
         <PartOf>programming.python</PartOf>
         <Summary xml:lang="en">Python bindings for the Qt application and UI framework</Summary>
         <Description xml:lang="en">Python bindings for the Qt application and UI framework.
 </Description>
-        <Archive type="binary" sha1sum="79eb0752a961b8e0d15c77d298c97498fbc89c5a">https://solus-project.com/sources/README.Solus</Archive>
+        <Archive type="binary" sha1sum="79eb0752a961b8e0d15c77d298c97498fbc89c5a">https://getsol.us/sources/README.Solus</Archive>
     </Source>
     <Package>
         <Name>python-pyside</Name>
@@ -80,7 +80,7 @@
 </Description>
         <PartOf>programming.devel</PartOf>
         <RuntimeDependencies>
-            <Dependency release="4">python-pyside</Dependency>
+            <Dependency release="5">python-pyside</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="header">/usr/include/PySide/QtCore/pyside_qtcore_python.h</Path>
@@ -121,8 +121,8 @@
         </Files>
     </Package>
     <History>
-        <Update release="4">
-            <Date>2018-12-13</Date>
+        <Update release="5">
+            <Date>2020-06-07</Date>
             <Version>1.2.4</Version>
             <Comment>Packaging update</Comment>
             <Name>Bryan T. Meyers</Name>

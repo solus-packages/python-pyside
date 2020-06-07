@@ -1,9 +1,9 @@
 name       : python-pyside
 version    : 1.2.4
-release    : 4
+release    : 5
 source     :
     - https://pypi.python.org/packages/36/ac/ca31db6f2225844d37a41b10615c3d371587677efd074db29855e7035de6/PySide-1.2.4.tar.gz : 1421bc1bf612c396070de9e1ffe227c07c1f3129278bc7d30c754b5146be2433
-license    : LGPL-2.1
+license    : LGPL-2.1-or-later
 component  : programming.python
 summary    : Python bindings for the Qt application and UI framework
 description: |
