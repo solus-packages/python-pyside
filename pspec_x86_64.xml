@@ -2,8 +2,8 @@
     <Source>
         <Name>python-pyside</Name>
         <Packager>
-            <Name>Bryan T. Meyers</Name>
-            <Email>bmeyers@datadrake.com</Email>
+            <Name>Pierre-Yves</Name>
+            <Email>pyu@riseup.net</Email>
         </Packager>
         <License>LGPL-2.1-or-later</License>
         <PartOf>programming.python</PartOf>
@@ -80,7 +80,7 @@
 </Description>
         <PartOf>programming.devel</PartOf>
         <RuntimeDependencies>
-            <Dependency release="5">python-pyside</Dependency>
+            <Dependency release="6">python-pyside</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="header">/usr/include/PySide/QtCore/pyside_qtcore_python.h</Path>
@@ -121,12 +121,12 @@
         </Files>
     </Package>
     <History>
-        <Update release="5">
-            <Date>2020-06-07</Date>
+        <Update release="6">
+            <Date>2020-07-01</Date>
             <Version>1.2.4</Version>
             <Comment>Packaging update</Comment>
-            <Name>Bryan T. Meyers</Name>
-            <Email>bmeyers@datadrake.com</Email>
+            <Name>Pierre-Yves</Name>
+            <Email>pyu@riseup.net</Email>
         </Update>
     </History>
 </PISI>
