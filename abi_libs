@@ -1,0 +1,16 @@
+QtCore.so
+QtDeclarative.so
+QtGui.so
+QtHelp.so
+QtMultimedia.so
+QtNetwork.so
+QtOpenGL.so
+QtScript.so
+QtScriptTools.so
+QtSql.so
+QtSvg.so
+QtTest.so
+QtUiTools.so
+QtXml.so
+QtXmlPatterns.so
+libpyside-python2.7.so.1.2
